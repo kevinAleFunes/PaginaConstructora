@@ -1,0 +1,79 @@
+body{
+    font-family: 'Roboto';
+    background: #4568DC;
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario{
+    width: 400px;
+    background: #fff;
+    padding: 40px 0;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-family: 'calibri';
+    color: white;
+    position: relative;
+}
+
+.formulario h1{
+    color: black;
+    text-align: center;
+}
+
+.formulario h2{
+    color: black;
+}
+
+.datos{
+    position: relative;
+    width: 90%;
+    left: 6px;
+    margin: auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+}
+
+.titulos{
+    color: black;
+    text-decoration: none;
+}
+
+.boton{
+    color: #fff;
+    background: #4568DC;
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    position: relative;
+    border-radius: 9px;
+    width: 90%;
+    padding: 6px;
+    left: 15px;
+}
+
+input{
+    position: relative;
+    right: 10px;
+}
+
+@media screen and (max-width:800px){
+    .formulario{
+        width: 200px;
+    }
+    .datos{
+        left: 0px;
+    }
+    .comentario{
+        width: 85%;
+    }
+}
