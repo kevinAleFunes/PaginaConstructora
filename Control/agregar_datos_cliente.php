@@ -8,12 +8,8 @@
 </head>
 <body>
     <section class="formulario">
-        <form action="" name="" method="post">
+        <form method="post" autocomplete="off">
             <h1>Completar Datos</h1>
-            <?php
-            include "/Modelo/Conexion.php"
-            include "/Control/controlador_login.php"
-            ?>
             <label class="titulos" for="name">Nombre</label>
             <input class="datos" type="name" id=name name="nombre">
             <label class="titulos" for="lastname">Apellido</label>
@@ -26,5 +22,8 @@
             <input class="boton" type="submit" value="Enviar" name="boton">
         </form>
     </section>
+    <?php
+        include("Principal.php");
+    ?>
 </body>
 </html>
