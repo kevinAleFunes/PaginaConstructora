@@ -41,6 +41,7 @@ body{
 
 .descripcion h2{
     font-size: 40px;
+    text-align: center;
 }
 
 .descripcion h3{
@@ -108,6 +109,10 @@ body{
     86% {background: #039be5;top: 25px;left: 35px;}
     100% {background: #039be5;top: 30px;left: 30px;}
 
+}
+
+.foto h2{
+    color: black;
 }
 
 .linea{
@@ -184,12 +189,80 @@ body{
 .next{
     font-size: 200px;
     display: block;
-    color: #fff;
+    color: #039be5;
     height: 30px;
     width: 200px;
     line-height: 30px;
     text-decoration: none;
     text-align: center;
+}
+
+.contacto h3{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.contacto h4{
+    font-size: 13px;
+    margin-top: -15px;
+}
+
+.linkedin{
+    font-size: 13px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.telefono{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+}
+
+.boton{
+    display: flex;
+}
+
+.contacto{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+    margin-top: 50px;
+}
+
+.ubicacion{
+    top: 10px;
+    left: 10px;
+}
+
+.ubicacion .foto{
+    text-decoration: none;
+    padding: 28px 50px;
+    font-size: 1rem;
+    position: relative;
+    margin: 32px;
+}
+
+.ubicacion .ubi{
+    background-image: url("/PaginaConstructora/Imagenes/Ubicación/ubica.jpg");
+    background-size: 110%;
+    color: black;
+    border-radius: 50px;
+    animation-name: ubi;
+    animation-duration: 7s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ubi {
+    0% {top: 10px;left: 10px;}
+    12% {top: 15px;left: 5px;}
+    24% { top: 20px;left: 0px;}
+    36% {top: 15px;left: 5px;}
+    50% {top: 10px;left: 10px;}
+    62% {top: 5px;left: 15px;}
+    74% {top: 0px;left: 20px;}
+    86% {top: 5px;left: 15px;}
+    100% {top: 10px;left: 10px;}
 }
 
 @keyframes movimiento{
@@ -201,6 +274,7 @@ body{
 }
 
 h1{
+    font-size: 50px;
     text-align: center;
     color: white;
 }
