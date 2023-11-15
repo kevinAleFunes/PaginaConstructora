@@ -1,0 +1,249 @@
+body{
+    width: 100%;
+    height: 600px;
+    background-image: url("/PaginaConstructora/Imagenes/Iselin/58980b33-160d-4ab0-a48a-2054ce798223.jpeg");
+    background-size: 110%;
+    animation: movimiento 7s infinite linear alternate;
+    background-repeat: no-repeat;
+}
+
+.menu_uno{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%);
+    display: grid;
+    flex-direction: colum;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 5);
+}
+
+.menu-navegacion h5{
+    margin-left: -100px;
+    margin-top: 100px;
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.cliente-navegacion{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+}
+
+.cliente-navegacion .ayuda{
+    text-decoration: none;
+    padding: 28px 50px;
+    font-size: 1rem;
+    position: relative;
+    margin: 32px;
+}
+
+.cliente-navegacion .uno{
+    background: #039be5;
+    color: #fff;
+    border-radius: 50px;
+    animation-name: uno;
+    animation-duration: 7s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes uno {
+    0% {background: #039be5;top: 30px;left: 30px;}
+    12% {background: #039be5;top: 35px;left: 25px;}
+    24% {background: #2CD8D5;top: 40px;left: 20px;}
+    36% {background: #039be5;top: 35px;left: 25px;}
+    50% {background: #039be5;top: 30px;left: 30px;}
+    62% {background: #039be5;top: 25px;left: 35px;}
+    74% {background: #ac0a94;top: 20px;left: 40px;}
+    86% {background: #039be5;top: 25px;left: 35px;}
+    100% {background: #039be5;top: 30px;left: 30px;}
+
+}
+
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
+
+h2{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.linea{
+    background: #555;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5)
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5;
+}
+
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+.light-box{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background: rgba (0, 0, 0, 5);
+    transition: transfrom .3s ease-in-out;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+
+.light-box img{
+    width: 50vw;
+    max-height: 70vh;
+}
+
+.light-box:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 40px;
+    background: #851919;
+    color:  #fff;
+    text-decoration: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.next{
+    font-size: 200px;
+    display: block;
+    color: #039be5;
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contacto h3{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.contacto h4{
+    font-size: 13px;
+    margin-top: -15px;
+}
+
+.linkedin{
+    font-size: 13px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.telefono{
+    font-size: 13px;
+    margin-bottom: 0px;
+    margin-top: -20px;
+}
+
+.boton{
+    display: flex;
+}
+
+.contacto{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+    margin-top: 50px;
+}
+
+.ubicacion{
+    top: 10px;
+    left: 10px;
+}
+
+.ubicacion .foto{
+    text-decoration: none;
+    padding: 28px 50px;
+    font-size: 1rem;
+    position: relative;
+    margin: 32px;
+}
+
+.ubicacion .ubi{
+    background-image: url("/PaginaConstructora/Imagenes/Ubicación/ubica.jpg");
+    background-size: 110%;
+    color: black;
+    border-radius: 50px;
+    animation-name: ubi;
+    animation-duration: 7s;
+    position: relative;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ubi {
+    0% {top: 10px;left: 10px;}
+    12% {top: 15px;left: 5px;}
+    24% { top: 20px;left: 0px;}
+    36% {top: 15px;left: 5px;}
+    50% {top: 10px;left: 10px;}
+    62% {top: 5px;left: 15px;}
+    74% {top: 0px;left: 20px;}
+    86% {top: 5px;left: 15px;}
+    100% {top: 10px;left: 10px;}
+}
