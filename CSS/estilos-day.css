@@ -98,6 +98,25 @@ h2{
     font-size: 35px;
 }
 
+.descripcion .linea{
+    background: #555;
+}
+
+.descripcion h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.descripcion h3{
+    color: black;
+    font-size: 23px;
+}
+
+.descripcion h4{
+    color: black;
+    font-size: 23px;
+}
+
 .linea{
     background: #039be5;
     height: 5px;
