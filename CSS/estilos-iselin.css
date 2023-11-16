@@ -88,14 +88,28 @@ body{
 
 h1{
     text-align: center;
-    color: #fff;
-    font-size: 35px;
+    color: black;
+    font-size: 40px;
 }
 
 h2{
     text-align: center;
     color: #fff;
     font-size: 30px;
+}
+
+.descripcion .linea{
+    background: #555;
+}
+
+.descripcion h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.descripcion h3{
+    color: #fff;
+    font-size: 23px;
 }
 
 .linea{
