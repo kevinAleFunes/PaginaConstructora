@@ -5,6 +5,6 @@ $pass = "kevinfunes0817";
 $server = "localhost";
 $db = "clientes";
 
-$con = new mysqli($server,$user,$pass,$db);
+$con = mysqli_connect ($server,$user,$pass,$db);
 
 ?>

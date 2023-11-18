@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DatosCliente</title>
-    <link rel="stylesheet" href="/CSS/estilos-datos-clientes.css">
+    <link rel="stylesheet" href="http://localhost/PHPMYSQL/PaginaConstructora/CSS/estilos-datos-clientes.css">
 </head>
 <body>
     <section class="formulario">
