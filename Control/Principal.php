@@ -19,17 +19,16 @@ if (isset($_POST['boton'])){
 
         if($consulta){
             ?>
-                <div class="confirmacion">Se conecto correctamente</h3>
+                <div class="confirmacion">Se conecto correctamente</div>
             <?php
-            header("location:http://localhost/PHPMYSQL/PaginaConstructora/paguina_constructora.html");
         } else{
             ?>
-                <div class="error">Ocurio un error</h4>
+                <div class="error">Ocurio un error</div>
             <?php
         }
     } else{
         ?>
-            <div class="error">Llena todos los campos</h4>
+            <div class="error">Llena todos los campos</div>
         <?php
     }
 }

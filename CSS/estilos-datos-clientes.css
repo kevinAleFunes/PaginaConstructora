@@ -8,6 +8,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .formulario{
     width: 400px;
     background: #fff;
@@ -61,23 +62,23 @@ body{
     left: 15px;
 }
 
-.confirmacion{
-    text-align: center;
-    top: 100px;
-    color: #00cb40;
-    font-size: 200px;
-}
-
-.error{
-    text-align: center;
-    top: 50px;
-    color: #e02d00;
-    font-size: 20px;
-}
-
 input{
     position: relative;
     right: 10px;
+}
+
+.confirmacion{
+    position: absolute;
+    top: 50px;
+    color: #00cb40;
+    font-size: 20px;
+}
+
+.error{
+    text-align: absolute;
+    top: 50px;
+    color: #e02d00;
+    font-size: 20px;
 }
 
 @media screen and (max-width:800px){

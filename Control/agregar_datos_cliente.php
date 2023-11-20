@@ -6,6 +6,16 @@
     <title>DatosCliente</title>
     <link rel="stylesheet" href="http://localhost/PHPMYSQL/PaginaConstructora/CSS/estilos-datos-clientes.css">
 </head>
+<script>
+    function confirmacion(){
+        var respuesta=confirm("¿Quieres enviar los datos?");
+        if(respuesta==true){
+            return true;
+        }else{
+            return false;
+        }
+    }
+</script>
 <body>
     <section class="formulario">
         <form method="post" autocomplete="off">
@@ -19,11 +29,12 @@
             <h2>Agregar comentario</h2>
             <textarea class="comentario" cols="45" rows="3" name="comentario"></textarea>
             <br>
-            <input class="boton" type="submit" value="Enviar" name="boton">
+            <input class="boton" type="submit" value="Enviar" onclick="return confirmacion()" name="boton">
         </form>
     </section>
     <?php
         include("Principal.php");
     ?>
+    <script src="/PaginaConstructora/js/datos_cliente.js"></script>
 </body>
 </html>
